@@ -126,7 +126,7 @@ img {
 	color: var(--accent-color);
 }
 
-.contacts-header .link {
+.contacts-link {
 	display: flex;
 	align-items: center;
 	color: var(--secondary-text-color);
@@ -140,10 +140,6 @@ img {
 	margin-left: auto;
 }
 
-.contacts-header .link:hover,
-.contacts-header .link:focus {
-	color: var(--accent-color);
-}
 .contacts-header .item {
 	margin-right: 50px;
 }
@@ -152,17 +148,15 @@ img {
 	margin-right: 0;
 }
 
-.contacts-link {
-	color: var(--secondary-text-color);
-}
 .icon-envelope,
 .icon-smartphone {
 	margin-right: 10px;
-	color: currentColor;
+	fill: currentColor;
 }
 
 .contacts-link:hover,
 .contacts-link:focus {
+	color: var(--accent-color);
 	fill: var(--accent-color);
 }
 
@@ -322,8 +316,7 @@ img {
 
 .team-social-list {
 	display: flex;
-	padding-right: 32px;
-	padding-left: 32px;
+	justify-content: center;
 	margin-top: 16px;
 }
 
@@ -446,8 +439,9 @@ img {
 	box-sizing: border-box;
 }
 
-.projects .item:hover,
-.projects .item:focus {
+.projects-link:hover,
+.projects-link:focus {
+	display: block;
 	box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
@@ -491,7 +485,7 @@ img {
 
 .footer-container {
 	display: flex;
-	align-items: center;
+	align-items: baseline;
 }
 
 .footer {
